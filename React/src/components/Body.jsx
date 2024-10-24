@@ -7,15 +7,13 @@ const Body = () => {
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">
-            A healthy meal delivered to your door, every single day
+            yha per main heading aaegi
           </h1>
           <p class="hero-description">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
+           HEADING KE NICHE description aaega
           </p>
           <a href="#" class="btn btn--full margin-right-sm">
-            Start eating well
+            Start Studying
           </a>
           <a href="#" class="btn btn--outline">
             Learn more &darr;
