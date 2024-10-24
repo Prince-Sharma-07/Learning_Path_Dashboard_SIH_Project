@@ -10,17 +10,17 @@ const Header = () => {
           <ul class="main-nav-list">
             <li>
               <a class="main-nav-link" href="#">
-                Section 1
+                Home
               </a>
             </li>
             <li>
               <a class="main-nav-link" href="#">
-                Section 2
+                community
               </a>
             </li>
             <li>
               <a class="main-nav-link" href="#">
-                Section 3
+                Dashboard
               </a>
             </li>
             <li>
@@ -35,6 +35,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <div class="signup">
+          <button class="button" href="./Login.jsx">Sign Up</button>
+        </div>
       </header>
     </>
   );
