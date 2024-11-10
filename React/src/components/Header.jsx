@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-const Header = () => {
+const Header = ({onSignUpOptions}) => {
   return (
     <>
       <header class="header">
@@ -36,7 +36,7 @@ const Header = () => {
           </ul>
         </nav>
         <div class="signup">
-          <button class="button" href="./Cardheader.jsx">Sign Up</button>
+          <button onClick={onSignUpOptions} class="button" type="button">Sign Up</button>
         </div>
       </header>
     </>
