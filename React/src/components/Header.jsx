@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Header = ({onSignUpOptions}) => {
@@ -9,29 +10,19 @@ const Header = ({onSignUpOptions}) => {
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
-              <a class="main-nav-link" href="#">
-                Home
-              </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a class="main-nav-link" href="#">
-                community
-              </a>
+              <Link to="/community">Community</Link>
             </li>
             <li>
-              <a class="main-nav-link" href="#">
-                Dashboard
-              </a>
+            <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
-              <a class="main-nav-link" href="#">
-                Section 4
-              </a>
+            <Link to="/section4">Section 4</Link>
             </li>
             <li>
-              <a class="main-nav-link nav-cta" href="#">
-                Section 5
-              </a>
+            <Link to="/section5">Section 5</Link>
             </li>
           </ul>
         </nav>

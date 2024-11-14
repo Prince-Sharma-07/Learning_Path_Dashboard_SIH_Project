@@ -1,28 +1,21 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
-import Body from "./components/body";
-import Cardheader from "./components/Cardheader";
-import Student_Login from "./components/Student_Login"
-// import Cardheader from "./Cardheader";
+import React from "react";
+import { Route, Routes } from "react-router-dom"; 
+import Home from "./pages/Home";
+import Community from "./pages/Community";
+import Dashboard from "./pages/Dashboard";
+import Section_4 from "./pages/Section_4";
+import Section_5 from "./pages/Section_5";
 
 const App = () => {
-  const [showOptions, setShowOptions] = useState(false);
-  const [clickOption, setClickOption] = useState(false);
-
-  const clickOnLoginOption = () => {
-    setClickOption(true);
-  }
-
-  const handleSignUpOption = () =>{
-    setShowOptions(!showOptions); // for the toggle effect 
-  }
   return (
     <>
-      <Header onSignUpOptions = {handleSignUpOption}></Header>
-      {showOptions && <Cardheader clickOnLoginOption = {clickOnLoginOption}/>}
-      {clickOption && <Student_Login/>}
-      <Body></Body>
-      {/* <Cardheader></Cardheader> */}
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/community" element={<Community />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/section4" element={<Section_4 />} />
+        <Route path="/section5" element={<Section_5 />} />
+      </Routes>
     </>
   );
 };

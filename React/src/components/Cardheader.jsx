@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const Cardheader = ({clickOnLoginOption}) => {
   return (
     <div>
 <div class="cards">
     <div class="card blue">
-        <p onClick = {clickOnLoginOption} class="tip">Student Hub</p>
+        <a onClick = {clickOnLoginOption} class="tip" target='_blank'>Student Hub</a>
     </div>
     <div class="card red">
-        <p class="tip">Instructor Hub</p>
+        <a class="tip" target='_blank'>Instructor Hub</a>
     </div>
 </div>
     </div>
