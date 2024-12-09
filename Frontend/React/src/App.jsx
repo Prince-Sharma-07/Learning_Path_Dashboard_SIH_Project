@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Cardheader from "./components/Cardheader";
 import StudentLogin from "./components/Student_Login";
+import './App.css'
 
 const App = () => {
   const [showOptions, setShowOptions] = useState(false); // Toggle login options
