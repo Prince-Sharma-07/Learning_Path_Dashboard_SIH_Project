@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -230,4 +230,11 @@ nav ul{
 
 .signup-form button:hover {
   background-color: #0056b3;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    
 }

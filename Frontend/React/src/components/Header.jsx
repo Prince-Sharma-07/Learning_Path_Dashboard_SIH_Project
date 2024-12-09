@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import myLogo from "../public/logo.png" 
 
 const Header = ({ onSignUpOptions }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,9 +17,8 @@ const Header = ({ onSignUpOptions }) => {
   return (
     <>
       <header className="header">
-        <img className="logo" alt="logo" href="logo.png" />
+       <a href="http://localhost:5173/"><img className="logo" src={myLogo} alt="Shiksha Sarthi"/></a>
         <nav>
-          <p>SHIKSHA SHARTHI</p>
           <ul>
             <li>
               <a href="#home">Home</a>

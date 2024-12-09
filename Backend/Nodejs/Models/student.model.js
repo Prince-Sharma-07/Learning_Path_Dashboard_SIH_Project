@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         lowercase : true
     },
     
-    phone : {
+    contact : {
         type : String,
         required : true,
         unique : true,
@@ -45,8 +45,7 @@ const userSchema = new mongoose.Schema({
         type : String,
         required : true,
         unique : true
-    },
-    
+    }
     
 } , {timestamps : true , versionKey : false})
 
