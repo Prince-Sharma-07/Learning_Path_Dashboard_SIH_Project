@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;
+    gap: 5%;
+    text-wrap: nowrap;
+}
+#f-page1{
+    background-color: skyblue;
+    height: 70vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+}
+#imp{
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgb(48, 48, 159);
+}
+#b-segment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 40px 35px;
+    background-color: brown;
+    position: absolute;
+    top: 72%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#help{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    position: fixed;
+}
+
+
+#f-page-2{
+    height: 70vh;
+    padding: 10%;
+    text-align: center;
+
+}
+
+#hover-box-container{
+    display:flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+.hover-box{
+    height: 220px;
+    width: 250px;
+    background-color: darkgray;
+    transition: transform 0.5s ease-in-out;
+}
+.hover-box:hover{
+    transform: translateY(-20px);
+    transition-delay: 50ms;
+}
+
+
+#f-page-3{
+    background-color: thistle;
+    height: 90vh;
+    display: flex;
+
+}
+#f-page3-1-part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#f-page3-2-part{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    line-height: 25px;
+}
+
+#gettoknowus{
+    height: 50px;
+    width: 130px;
+    background-color: rgb(41, 41, 218);
+    color: aliceblue;
+}
+
+
+#f-page-4{
+    height: 100vh;
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+#page4-box{
+    height: 90vh;
+    width: 40%;
+    background-color: ivory;
+    border-radius: 15px;
+    padding: 60px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+
+#f-page-5{
+    display: flex;
+    background-color: darkslategray;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#page5-box1{
+    width: 60%;
+    height: 80%;
+    background-color: dimgrey;
+}
+#page5-box2{
+    height: 80%;
+    width: 30%;
+    background-color: dimgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.open-modal-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+/* Form styles */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    
+}
