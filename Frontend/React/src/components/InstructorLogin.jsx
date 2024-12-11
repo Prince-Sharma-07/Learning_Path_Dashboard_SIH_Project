@@ -12,7 +12,7 @@ const Login = () => {
                         <input type="email" placeholder="Email" required />
                         <input type="password" placeholder="Password" required />
                         <div className="newuser">
-                          <p>Don't have an Account. </p>
+                          <p>Don't have an Account</p>
                           <a href="#">Sign Up</a>
                         </div>
 
