@@ -66,6 +66,7 @@ const Body = () => {
               width: "400px",
               textAlign: "center",
               backgroundColor: "skyblue",
+              
             }}
           >
             hehe
