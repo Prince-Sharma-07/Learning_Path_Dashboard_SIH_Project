@@ -41,10 +41,11 @@ const Header = ({ onSignUpOptions }) => {
             <li>
               <a href="#aboutus">About Us</a>
             </li>
-          </ul>
-          <button className="open-modal-btn" onClick={openModal}>
+            <li><button className="signup" onClick={onSignUpOptions}>
             Login/Signup
-          </button>
+          </button></li>
+          </ul>
+          
         </nav>
 
         {/* Modal */}
@@ -55,52 +56,9 @@ const Header = ({ onSignUpOptions }) => {
                 &times;
               </button>
               <h2>Signup</h2>
-              <form className="signup-form">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="User Name"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  required
-                />
-                <input
-                  type="number"
-                  placeholder=" Contact"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="Gender"
-                  required
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  required
-                />
-                <button type="submit">Signup</button>
-              </form>
             </div>
           </div>
         )}
-
-        <div className="signup">
-          <button
-            onClick={onSignUpOptions}
-            className="button"
-            type="button"
-          >
-            Sign Up
-          </button>
-        </div>
       </header>
     </>
   );

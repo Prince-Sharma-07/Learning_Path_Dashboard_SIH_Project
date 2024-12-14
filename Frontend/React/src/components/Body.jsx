@@ -56,7 +56,7 @@ const Body = () => {
           <div className="hover-box">BOX 3</div>
           <div className="hover-box">BOX 4</div>
           <div className="hover-box">BOX 5</div>
-        </div>
+        </div>[]
       </section>
       <section id="f-page-3">
         <div id="f-page3-1-part">

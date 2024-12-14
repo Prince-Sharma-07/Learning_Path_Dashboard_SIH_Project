@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import "../App.css";
-const Login = () => {
+const Signup = () => {
   return (
     <>
-    <div className="loginForm">
+    <div className="SignupForm">
 <form action="" class="form">
     <p>
         Welcome,<span>sign in to continue</span>
     </p>
-    <input type="text" placeholder="User Name" required />
-                        <input type="email" placeholder="Email" required />
+    <input type="text" placeholder="Full Name" required />
+                        <input type="text" placeholder="User Name" required />
+                        <input type="number" placeholder="Contact" required />
+                        <input type="Email" placeholder="Email Id" required />
+                        <input type="text" placeholder="Gender" required />
                         <input type="password" placeholder="Password" required />
                         <div className="newuser">
-                          <p>Don't have an Account. </p>
-                          <a href="#">Sign Up</a>
+                          <p>Have an Account .</p>
+                          <a href="#">Login</a>
                         </div>
 
     <button class="oauthButton">

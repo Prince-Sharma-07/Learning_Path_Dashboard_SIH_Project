@@ -3,16 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header{
+    display: flex;
+
+    align-items: center; 
+    /* justify-content: space-between; */
+}
+.logo{
+     margin-left: 2rem;
+}
 nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 70px;
-    justify-content: space-around;
+    font-size: 1.2rem;
 }
 nav ul{
     display: flex;
     gap: 5%;
+    margin-left: 5rem;
     text-wrap: nowrap;
+}
+nav ul li{
+    list-style: none; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
 }
 #f-page1{
     background-color: skyblue;
@@ -159,7 +177,7 @@ nav ul{
 
 }
 
-.open-modal-btn {
+.signup {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -167,7 +185,7 @@ nav ul{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px;
+    margin-left: 5rem;
 }
 
 /* Modal container */
@@ -237,4 +255,134 @@ nav ul{
     width: 5rem;
     border-radius: 50%;
     
+}
+/* ********************************************** SIGN UP PAGE **************************************************** */
+.loginForm{
+    display: flex;
+    justify-content: center;
+   align-items: center; 
+}
+.form {
+  --background: #d3d3d3;
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  padding: 20px;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  width: 30rem;
+}
+.newuser{
+    display: flex;
+}
+
+.form > p {
+  font-family: var(--font-DelaGothicOne);
+  color: var(--font-color);
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > p > span {
+  font-family: var(--font-SpaceMono);
+  color: var(--font-color-sub);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.separator > div {
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--font-color-sub);
+}
+
+.separator > span {
+  color: var(--font-color);
+  font-family: var(--font-SpaceMono);
+  font-weight: 600;
+}
+
+.oauthButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+    /* margin: 50px auto 0 auto; */
+  padding: auto 15px 15px auto;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all 250ms;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.oauthButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.oauthButton:hover {
+  color: #e8e8e8;
+}
+
+.oauthButton:hover::before {
+  width: 100%;
+}
+
+.form > input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
